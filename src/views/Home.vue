@@ -41,9 +41,8 @@
                                 aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link"
                                 id="menu-item-dropdown-3323">&#x1f34b;工具</a>
                             <ul :class="['dropdown-menu',{show:state.showTool}]" aria-labelledby="menu-item-dropdown-3323" role="menu">
-                                <li class="nav-item"><a title="&#x1f33d;IP路由追踪" target="_blank"
-                                        href="https://tools.ipip.net/traceroute.php"
-                                        class="dropdown-item">&#x1f33d;IP路由追踪</a></li>
+                                <!-- <li class="nav-item" @click="$router.push('/tool')"><router-link title="&#x1f33d;随机点名" to="/tool"
+                                        class="dropdown-item">&#x1f33d;随机点名</router-link></li> -->
                                 <li class="nav-item"><a title="&#x1f350;域名Whois查询" target="_blank" href="https://mao.cx/"
                                         class="dropdown-item">&#x1f350;域名Whois查询</a></li>
                                 <li class="nav-item"><a title="&#x1f958;域名被墙查询"
@@ -70,10 +69,10 @@
                                 aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link"
                                 id="menu-item-dropdown-3324">&#x1f371;登录</a>
                             <ul :class="['dropdown-menu',{show:state.showLogin}]" aria-labelledby="menu-item-dropdown-3324" role="menu">
-                                <li class="nav-item"><a title="&#x1f966;登录" href="https://www.nbmao.com/wp-admin"
-                                        class="dropdown-item">&#x1f966;登录</a></li>
-                                <li class="nav-item"><a title="&#x1f352;注册" href="wp-login.php?action=register"
-                                        class="dropdown-item">&#x1f352;注册</a></li>
+                                <li class="nav-item"><router-link title="&#x1f966;登录" to="/login"
+                                        class="dropdown-item">&#x1f966;登录</router-link></li>
+                                <li class="nav-item"><router-link title="&#x1f352;注册" to="/register"
+                                        class="dropdown-item">&#x1f352;注册</router-link></li>
                             </ul>
                         </li>
                     </ul>
@@ -280,7 +279,7 @@
                         </span>
                         <div class="a-thumb">
                             <a href="https://www.nbmao.com/archives/6253">
-                                <img src="@/assets/picture/8318a874bb97b83faa6db89a21526fed.jpeg" /> 
+                                <img src="@/assets/picture/6fc06cd8f022c0ca47fa58417617e158.png" /> 
                             </a>
                         </div>
                         <div class="a-post 1">
